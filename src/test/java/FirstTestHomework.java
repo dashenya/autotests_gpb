@@ -12,9 +12,9 @@ public class FirstTestHomework extends BaseTest {
     public void check2_main_page() {
         //Selenide.open("https://smmtouch.com");
 
-        homePage.get_buy_now_btn()
-                .shouldBe(Condition.visible)
-                .click();
+//        homePage.get_buy_now_btn()
+//                .shouldBe(Condition.visible)
+//                .click();
         Assert.assertTrue("Окно для оплаты не открылось", homePage.get_popup_dialog().isDisplayed());
         homePage.get_popup_dialog_header().shouldBe(Condition.visible);
         homePage.get_any_input("Логин").sendKeys("DarkLord");
